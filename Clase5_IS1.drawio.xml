@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-09T02:29:31.018Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="irbz6hOlqAhmJHLlyoK8" version="20.1.1" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-09-09T15:37:30.203Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="U9IsIB8ApCKMnigob-vF" version="20.1.1" type="github" pages="7">
   <diagram id="uwsZihoTyMfhGhteoFrE" name="Casos de Uso">
     <mxGraphModel dx="1062" dy="613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -383,7 +383,7 @@
         <mxCell id="GIEaeYizNBmdiVlvFXoW-3" value="Cliente" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="120" y="180" width="20" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="GIEaeYizNBmdiVlvFXoW-4" value="Cajero" style="shape=umlLifeline;participant=umlEntity;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="GIEaeYizNBmdiVlvFXoW-4" value="UI Cajero" style="shape=umlLifeline;participant=umlEntity;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="210" y="180" width="40" height="300" as="geometry" />
         </mxCell>
         <mxCell id="GIEaeYizNBmdiVlvFXoW-2" value="Inserta tarjeta" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;rounded=0;" edge="1" target="GIEaeYizNBmdiVlvFXoW-1" parent="GIEaeYizNBmdiVlvFXoW-4">
