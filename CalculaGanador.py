@@ -16,27 +16,32 @@ class CalculaGanador:
             for fila in datareader:
                 data.append( fila)
         return data
+    #for candidato in votosxcandidato:
+    #    print('candidato: ' + candidato + ' votos validos: ' + str(votosxcandidato[candidato]))
 
-    def calcularganador(self, data):
+    def calcularvotos(self, data):
         votosxcandidato = {}
-        votosvalidos = 0
-        # Calcular los votos
         for fila in data:
             if not fila[4] in votosxcandidato:
                 votosxcandidato[fila[4]] = 0
-            if fila[5] == '1':
+            if fila[5] == '1' and len(fila[3]) == 8:
                 votosxcandidato[fila[4]] = votosxcandidato[fila[4]] + 1
-                votosvalidos = votosvalidos + 1
-        #for candidato in votosxcandidato:
-        #    print('candidato: ' + candidato + ' votos validos: ' + str(votosxcandidato[candidato]))
-        # Seleccionar el que tiene mas votos
+        return votosxcandidato
+
+    def seleccionarganador(self, votosxcandidato):
         maxvotos = 0
         candidatoganador = ''
+        votosvalidos = 0
         for candidato in votosxcandidato:
+            votosvalidos = votosvalidos + votosxcandidato[candidato]
             if votosxcandidato[candidato] > maxvotos:
                 candidatoganador = candidato
                 maxvotos = votosxcandidato[candidato]
         return [candidatoganador]
+
+    def calcularganador(self, data):
+        votosxcandidato = self.calcularvotos(data)
+        return self.seleccionarganador(votosxcandidato)
 
 c = CalculaGanador()
 #c.calcularvotos(c.leerdatos())
