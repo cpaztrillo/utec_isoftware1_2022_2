@@ -36,15 +36,16 @@ class CalculaGanador:
         votosvalidos = 0
         #app_context = {"userId": "cpaztrillo@gmail.com"}
         #isnuevocalculo = client.is_enabled("demofeature", app_context)
-        isnuevocalculo = False
+        isnuevocalculo = True
         if(isnuevocalculo):
             print ("usando nuevo calculo")
-        #    for candidato in votosxcandidato:
-        #        votosvalidos = votosvalidos + votosxcandidato[candidato]
-        #    sorted_x = sorted(votosxcandidato.items(), key=lambda kv: kv[1], reverse=True)
-        #    if sorted_x[0][1] >  0.5*votosvalidos:
-        #        return [sorted_x[0][0]]
-        #    return [sorted_x[0][0], sorted_x[1][0]]
+            for candidato in votosxcandidato:
+                votosvalidos = votosvalidos + votosxcandidato[candidato]
+            sorted_x = sorted(votosxcandidato.items(), key=lambda kv: kv[1], reverse=True)
+            if sorted_x[0][1] >  0.5*votosvalidos:
+                return [sorted_x[0][0]]
+            return ['Segunda Vuelta']
+            [sorted_x[0][0], sorted_x[1][0]]
         else:
             for candidato in votosxcandidato:
                 votosvalidos = votosvalidos + votosxcandidato[candidato]
