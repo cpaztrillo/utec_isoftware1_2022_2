@@ -19,5 +19,13 @@ class TestStringMethods(unittest.TestCase):
         c = CalculaGanador()
         self.assertEqual(c.calcularganador(datatest), ['Aundrea Grace'])
 
+    def test_segundavuelta(self):
+        datatest = [ ['Áncash', 'Asunción', 'Acochaca', '40810062', 'Eddie Hinesley', '1'],
+        ['Áncash', 'Asunción', 'Acochaca', '40810062', 'Eddie Hinesley', '1'],
+        ['Áncash', 'Asunción', 'Acochaca', '40810072', 'Nhium Hai', '1'],
+        ['Áncash', 'Asunción', 'Acochaca', '86777322', 'Aundrea Grace', '1']]
+        c = CalculaGanador()
+        self.assertEqual(c.calcularganador(datatest), ['Segunda Vuelta'])
+
 if __name__ == '__main__':
     unittest.main()

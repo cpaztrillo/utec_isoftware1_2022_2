@@ -7,7 +7,7 @@ from decimal import *
 # Si hay un candidato con >50% de votos válidos retornar un array con un string con el nombre del ganador
 # Si no hay un candidato que cumpla la condicion anterior, retornar un array con el texto "segunda vuelta"
 # el DNI debe ser valido (8 digitos)
-class CalculaGanador:
+class CalculaGanadorUnleash:
 
     def leerdatos(self):
         data = []
@@ -34,17 +34,17 @@ class CalculaGanador:
         maxvotos = 0
         candidatoganador = ''
         votosvalidos = 0
-        #app_context = {"userId": "cpaztrillo@gmail.com"}
+        app_context = {"userId": "cpaztrillo@gmail.com"}
         #isnuevocalculo = client.is_enabled("demofeature", app_context)
-        isnuevocalculo = False
+        isnuevocalculo = client.is_enabled("demofeature")
         if(isnuevocalculo):
             print ("usando nuevo calculo")
-        #    for candidato in votosxcandidato:
-        #        votosvalidos = votosvalidos + votosxcandidato[candidato]
-        #    sorted_x = sorted(votosxcandidato.items(), key=lambda kv: kv[1], reverse=True)
-        #    if sorted_x[0][1] >  0.5*votosvalidos:
-        #        return [sorted_x[0][0]]
-        #    return [sorted_x[0][0], sorted_x[1][0]]
+            for candidato in votosxcandidato:
+                votosvalidos = votosvalidos + votosxcandidato[candidato]
+            sorted_x = sorted(votosxcandidato.items(), key=lambda kv: kv[1], reverse=True)
+            if sorted_x[0][1] >  0.5*votosvalidos:
+                return [sorted_x[0][0]]
+            return [sorted_x[0][0], sorted_x[1][0]]
         else:
             for candidato in votosxcandidato:
                 votosvalidos = votosvalidos + votosxcandidato[candidato]
@@ -59,16 +59,15 @@ class CalculaGanador:
         votosxcandidato = self.calcularvotos(data, client)
         return self.seleccionarganador(votosxcandidato, client)
 
-#client = UnleashClient(
-#    url="http://localhost:4242/api",
-#    app_name="my-python-app",
-#    custom_headers={'Authorization': 'default:development.unleash-insecure-api-token'}
-#    )
+client = UnleashClient(
+    url="http://localhost:4242/api",
+    app_name="my-python-app",
+    custom_headers={'Authorization': 'default:development.unleash-insecure-api-token'}
+    )
 
-#client.initialize_client()
-client = 0
+client.initialize_client()
 
-c = CalculaGanador()
+c = CalculaGanadorUnleash()
 #c.calcularvotos(c.leerdatos())
 datatest = [
 ['Áncash', 'Asunción', 'Acochaca', '40810062', 'Eddie Hinesley', '1'],
