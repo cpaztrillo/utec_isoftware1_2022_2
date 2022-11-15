@@ -34,18 +34,19 @@ class CalculaGanador:
         maxvotos = 0
         candidatoganador = ''
         votosvalidos = 0
-        #app_context = {"userId": "cpaztrillo@gmail.com"}
-        #isnuevocalculo = client.is_enabled("demofeature", app_context)
         isnuevocalculo = True
+        print(votosxcandidato)
         if(isnuevocalculo):
             print ("usando nuevo calculo")
             for candidato in votosxcandidato:
                 votosvalidos = votosvalidos + votosxcandidato[candidato]
             sorted_x = sorted(votosxcandidato.items(), key=lambda kv: kv[1], reverse=True)
+            print ("ordenados")
+            print(sorted_x)
             if sorted_x[0][1] >  0.5*votosvalidos:
                 return [sorted_x[0][0]]
-            return ['Segunda Vuelta']
-            [sorted_x[0][0], sorted_x[1][0]]
+            #return ['Segunda Vuelta']
+            return [sorted_x[0][0], sorted_x[1][0]]
         else:
             for candidato in votosxcandidato:
                 votosvalidos = votosvalidos + votosxcandidato[candidato]
@@ -60,21 +61,15 @@ class CalculaGanador:
         votosxcandidato = self.calcularvotos(data, client)
         return self.seleccionarganador(votosxcandidato, client)
 
-#client = UnleashClient(
-#    url="http://localhost:4242/api",
-#    app_name="my-python-app",
-#    custom_headers={'Authorization': 'default:development.unleash-insecure-api-token'}
-#    )
 
-#client.initialize_client()
 client = 0
 
 c = CalculaGanador()
-#c.calcularvotos(c.leerdatos())
+print(c.calcularganador(c.leerdatos(),0))
 datatest = [
 ['Áncash', 'Asunción', 'Acochaca', '40810062', 'Eddie Hinesley', '1'],
 ['Áncash', 'Asunción', 'Acochaca', '57533597', 'Eddie Hinesley', '1'],
 ['Áncash', 'Asunción', 'Acochaca', '86777322', 'Aundrea Grace', '1'],
 ['Áncash', 'Asunción', 'Acochaca', '23017965', 'Aundrea Grace', '1']
 ]
-print(c.calcularganador(datatest, client))
+#print(c.calcularganador(datatest, client))
