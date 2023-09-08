@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-27T19:10:13.250Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="9vkFc0JQ15v6zNUyg37n" version="20.4.0" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2023-09-08T01:25:58.346Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="LJNLGJIsT3B79feOg_M6" version="21.7.2" type="github" pages="8">
   <diagram id="uwsZihoTyMfhGhteoFrE" name="Casos de Uso">
-    <mxGraphModel dx="906" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -29,7 +29,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NnxTl6cCBLa3OKksGr1e" name="Vista Lógica">
-    <mxGraphModel dx="906" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -115,11 +115,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Mk-QgFb14iqq8bcv7J_1" name="Vista de Procesos">
-    <mxGraphModel dx="906" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="oVJWqT3DHp2dIm6aIwTC-1" value="" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;" vertex="1" parent="1">
+        <mxCell id="oVJWqT3DHp2dIm6aIwTC-1" value="" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;" parent="1" vertex="1">
           <mxGeometry x="245" width="495" height="160" as="geometry" />
         </mxCell>
         <mxCell id="emZVnHpo3aipcgIjC9rc-1" value="Cajero" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" parent="1" vertex="1">
@@ -164,7 +164,7 @@
         <mxCell id="kSXQZYPhU3vz9lqrBwXO-3" value="Cuenta" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="315" y="70" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="kSXQZYPhU3vz9lqrBwXO-5" value="Selecciona Monto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.567;exitY=0.383;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="kSXQZYPhU3vz9lqrBwXO-3" edge="1" source="G5Jds7LppPrLvM2l2Js1-1">
+        <mxCell id="kSXQZYPhU3vz9lqrBwXO-5" value="Selecciona Monto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.567;exitY=0.383;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="G5Jds7LppPrLvM2l2Js1-1" target="kSXQZYPhU3vz9lqrBwXO-3" edge="1">
           <mxGeometry x="0.4331" y="50" relative="1" as="geometry">
             <mxPoint x="260" y="327.5" as="sourcePoint" />
             <mxPoint x="570" y="362.5" as="targetPoint" />
@@ -198,26 +198,26 @@
     </mxGraphModel>
   </diagram>
   <diagram id="6RqH1ysuixubyJ9l52n8" name="Vista de Desarrollo">
-    <mxGraphModel dx="906" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="1Z-_uRy2l1A0-F40WUoS-1" value="Cajero&#xa;(VB .Net)" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="1Z-_uRy2l1A0-F40WUoS-1" value="Cajero&#xa;(VB .Net)" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="150" y="250" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="1Z-_uRy2l1A0-F40WUoS-2" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="1Z-_uRy2l1A0-F40WUoS-1" target="1Z-_uRy2l1A0-F40WUoS-4">
+        <mxCell id="1Z-_uRy2l1A0-F40WUoS-2" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="1Z-_uRy2l1A0-F40WUoS-1" target="1Z-_uRy2l1A0-F40WUoS-4" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
             <mxPoint x="350" y="270" as="sourcePoint" />
             <mxPoint x="460" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1Z-_uRy2l1A0-F40WUoS-4" value="API de Retiros&#xa;(Java)" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="1Z-_uRy2l1A0-F40WUoS-4" value="API de Retiros&#xa;(Java)" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="350" y="350" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="1Z-_uRy2l1A0-F40WUoS-5" value="Sistema &#xa;Transaccional Bancario" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="1Z-_uRy2l1A0-F40WUoS-5" value="Sistema &#xa;Transaccional Bancario" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="610" y="250" width="160" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="1Z-_uRy2l1A0-F40WUoS-6" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="1Z-_uRy2l1A0-F40WUoS-4" target="1Z-_uRy2l1A0-F40WUoS-5">
+        <mxCell id="1Z-_uRy2l1A0-F40WUoS-6" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="1Z-_uRy2l1A0-F40WUoS-4" target="1Z-_uRy2l1A0-F40WUoS-5" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
             <mxPoint x="340" y="270" as="sourcePoint" />
             <mxPoint x="500" y="270" as="targetPoint" />
@@ -227,7 +227,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="EnM0X5BA06WWZaKK6p9J" name="Vista Fìsica">
-    <mxGraphModel dx="906" dy="-1609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="-1450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -275,7 +275,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="1uPnFbLQRDBaW1Yl3G8x" name="Diagrama de Clases">
-    <mxGraphModel dx="906" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -393,7 +393,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="U48p1IerwYarnUcjU-aW" name="Diagrama de Secuencia">
-    <mxGraphModel dx="906" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -488,6 +488,14 @@
             <mxPoint x="230" y="479" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Wg0CDy9Ov3fXj3cnGUsk" name="Página-8">
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
