@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-23T00:52:30.819Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="RA2QrEcUvPy31xsk8Yej" version="24.2.8" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2024-07-15T02:05:47.326Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="9TefSNZNJRduqv2X3BqL" version="24.5.5" type="github" pages="9">
   <diagram id="uwsZihoTyMfhGhteoFrE" name="Casos de Uso">
     <mxGraphModel dx="981" dy="418" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -620,6 +620,38 @@
           <mxGeometry x="-0.3419" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="A4ckR0SZqnrM-RKiLxBa" name="Página-9">
+    <mxGraphModel dx="931" dy="460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="01H_pq_GTvu4hc1GEC2U-1" value="CuentaUsuario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="260" width="230" height="198" as="geometry" />
+        </mxCell>
+        <mxCell id="01H_pq_GTvu4hc1GEC2U-2" value="+ Numero: String&lt;div&gt;+ Saldo: Number&lt;/div&gt;&lt;div&gt;+ NumerosContacto: String[]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="01H_pq_GTvu4hc1GEC2U-1">
+          <mxGeometry y="30" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="01H_pq_GTvu4hc1GEC2U-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="01H_pq_GTvu4hc1GEC2U-1">
+          <mxGeometry y="120" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="01H_pq_GTvu4hc1GEC2U-4" value="+ historialOperaciones(): Operacion[]&lt;div&gt;+ transferir (destino, valor): bool&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="01H_pq_GTvu4hc1GEC2U-1">
+          <mxGeometry y="128" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="01H_pq_GTvu4hc1GEC2U-5" value="Operacion" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="295" width="230" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="01H_pq_GTvu4hc1GEC2U-6" value="+ Origen: CuentaUsuario&lt;div&gt;+ Destino: CuentaUsuario&lt;br&gt;&lt;div&gt;+ Valor: Number&lt;/div&gt;&lt;div&gt;+ Fecha: Date&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="01H_pq_GTvu4hc1GEC2U-5">
+          <mxGeometry y="30" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="01H_pq_GTvu4hc1GEC2U-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="01H_pq_GTvu4hc1GEC2U-5">
+          <mxGeometry y="120" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="01H_pq_GTvu4hc1GEC2U-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="01H_pq_GTvu4hc1GEC2U-2" target="01H_pq_GTvu4hc1GEC2U-6">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
